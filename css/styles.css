@@ -1,4 +1,46 @@
 h1 {
-    color: red;
+    color: white;
     text-align: center;
+    font-family: 'Neuton', serif;
+    font-size: 40px;
+    margin: -10px 0px 0px 0px;
+}
+
+body {
+    background-color: black; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    border-bottom: 1px solid darkgray;
+}
+
+.fa-bars, .fa-gear, .fa-circle-question, .fa-chart-column  {
+    color: white;
+    font-size: 24px;
+}
+
+.fa-circle-question, .fa-chart-column {
+    margin: 0px 5px 0px 5px;
+}
+
+.keyrow {
+    text-align: center;
+}
+
+.key {
+    width: 40px;
+    height:50px;
+    background-color: gray;
+    color: white;
+}
+
+#enter, #back {
+    width: 80px;
+}
+
+#qwerty {
+    margin: 50px;
 }
