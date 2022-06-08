@@ -44,3 +44,29 @@ header {
 #qwerty {
     margin: 50px;
 }
+
+#mystery-word {
+    color: white;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hide {
+    background-color: black;
+    color: darkgray;
+}
+
+.letter {
+   display: inline;
+   list-style-type: none;
+   padding: 10px;
+   border: 1px solid gray;
+  
+}
+
+.space {
+    display: inline;
+    list-style-type: none;
+    padding: 10px;
+}
