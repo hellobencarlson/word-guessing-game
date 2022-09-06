@@ -54,7 +54,7 @@ header {
 
 .hide {
     background-color: black;
-    color: darkgray;
+    color: black;
 }
 
 .letter {
@@ -69,4 +69,10 @@ header {
     display: inline;
     list-style-type: none;
     padding: 10px;
+}
+
+.invisible {
+    background-color: black;
+    color: black;
+    border: none;
 }

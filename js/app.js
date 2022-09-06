@@ -6,6 +6,8 @@
 // run only on enter
 // then move to lower rows
 
+// reset the game
+
 // git hub
 
 
@@ -53,7 +55,9 @@ function addPhraseToDisplay() {
                 newLi.classList.add("hide");
                  newLi.classList.add("letter");
                  // letter to match from class
+                // is class with letter needed??
                  newLi.classList.add(currentLetter);
+                 newLi.innerHTML = currentLetter;
              }
             // add Li to UL
             document.getElementsByTagName('ul')['0'].appendChild(newLi);
@@ -72,11 +76,19 @@ function addPhraseToDisplay() {
     var clicked = event.target
    if (clicked.tagName = "BUTTON") {
        console.log(clicked.innerHTML);
-       document.getElementById('mystery-word').firstElementChild.firstElementChild.innerHTML = clicked.innerHTML;
+       // hide letter once clicked
+       clicked.classList.add("invisible");
+      
     // add loop
+        var returnPhrase = document.getElementsByClassName("letter");
+
+       for (var i = 0; i < returnPhrase.length; i++) {
+          if (clicked.innerHTML == returnPhrase[i].innerHTML) {
+              returnPhrase[i].classList.remove('hide');
+          }
+       }
     }
-    // if (button.tagName == "BUTTON" && button.className != "key wrong" && button.className != "key chosen") {  
-    //     game.handleInteraction(button);
+
 }
 
 document.getElementById('qwerty').addEventListener("click", collectClick);
