@@ -27,7 +27,7 @@ function getRandomPhrase() {
     
 }
 
-getRandomPhrase();
+// getRandomPhrase();
 
 
 // ADD PHRASE TO DISPLAY
